@@ -75,3 +75,66 @@ h1 {
     gap: 20px;
     padding: 10px 0;
 }
+
+/* About me Page */
+
+.container-aboutMePage {
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    gap: 2em;
+}
+
+.contanier-aboutme-top {
+    padding: 0 5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.text-about-me {
+    font-size: 5em;
+    margin-left: 20%;
+}
+
+.container-aboutme {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.container-aboutme hr {
+    width: 0.1em;
+    border: none;
+    background-color: #ffffff;
+}
+
+.container-aboutme-leftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 2em;
+}
+
+.container-aboutme-rightContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 3em 0 0 0;
+}
+
+.container-aboutme-rightContent button {
+    width: 30%;
+    background: rgba(0,0,0,0);
+    border: solid 2px #e0541d;
+    border-radius: 1.5em;
+    padding: 2em;
+}
+
+.container-aboutme-rightContent .signature {
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 5em;
+}
