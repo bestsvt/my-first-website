@@ -13,6 +13,8 @@ h1 {
 :root {
     --primary-bg-color: #222a35;
     --secondary-bg-color: #171e28;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #bdbdbd;
  }
 
 .container-firstPage,.container-myResumePage {
@@ -22,6 +24,8 @@ h1 {
 .container-aboutMePage,.container-contactMePage {
     background-color: var(--secondary-bg-color);
 }
+
+/* First Page */
 
 .container-profile-leftContent h1 {
     font-size: 5em;    
@@ -55,9 +59,9 @@ h1 {
     width: 25%;
 }
 .container-profile-rightContent hr {
-    width: 3px;
+    width: 1px;
     border: none;
-    background-color: #ffffff;
+    background-color: var(--primary-text-color);
 }
 
 .profile-icon {
@@ -93,6 +97,29 @@ h1 {
     margin-bottom: 5em;
 }
 
+.contanier-aboutme-top p {
+    color: var(--secondary-text-color);
+}
+
+
+.contanier-aboutme-top :first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contanier-aboutme-top :last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contanier-aboutme-top :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .text-about-me {
     font-size: 5em;
     margin-left: 20%;
@@ -105,12 +132,12 @@ h1 {
 }
 
 .container-aboutme hr {
-    width: 0.1em;
+    width: 1px;
     border: none;
-    background-color: #ffffff;
+    background-color: var(--primary-text-color);
 }
 
-.container-aboutme-leftContent {
+.container-aboutme .leftContent {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -118,7 +145,7 @@ h1 {
     gap: 2em;
 }
 
-.container-aboutme-rightContent {
+.container-aboutme .rightContent {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -126,15 +153,171 @@ h1 {
     padding: 3em 0 0 0;
 }
 
-.container-aboutme-rightContent button {
-    width: 30%;
-    background: rgba(0,0,0,0);
-    border: solid 2px #e0541d;
-    border-radius: 1.5em;
-    padding: 2em;
-}
-
-.container-aboutme-rightContent .signature {
+.container-aboutme .signature {
     font-family: 'Mrs Saint Delafield', cursive;
     font-size: 5em;
+}
+
+/* My Resume Page */
+
+.container-myResumePage {
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.text-myResume {
+    font-size: 5em;
+    margin-left: 20%;
+}
+
+
+.container-myResume {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.container-myResume .leftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 2em;
+    padding: 0 0 10em 0;
+}
+
+.container-myResume .rightContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 3em 0 3em 0;
+}
+
+.text-resume-aboutme {
+    width: 80%;
+}
+
+.skills-header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 60%;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 0.5em;
+}
+
+.skills-container hr {
+    height: 1px;
+    background-color: var(--primary-text-color);
+    border: none;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills h2 {
+    font-size: 1em;
+}
+
+
+.skills-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.skills-title img {
+    width: 2em;
+}
+
+.text-h2 {
+    font-size: 2em;
+}
+
+.education-header-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
+.education-experience-container p {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+    line-height: 1.5em;
+}
+
+.education-experience-container h4 {
+    font-size: 1.5em;
+    line-height: 0.75em;
+}
+
+.education-experience-container h3 {
+    font-size: 1em;
+    line-height: 1.25em;
+}
+
+.education-experience-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+.education-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.experience-header-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+.hobbies img {
+    width: 4em;
+    height: 4em;
+}
+
+.container-myResumePage .rightContent button {
+    width: 35%;
+    background: #ff8059;
+    border: none;
+    border-radius: 1em;
+    padding: 1em 0.5em;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 2em;
+}
+
+.container-myResumePage .rightContent button:hover {
+    background: #ffcebf;
+    color: #000000;
 }
