@@ -1,18 +1,21 @@
-import logoPS from "../assets/photoshop.png";
-import logoAI from "../assets/illustrator.png";
-import logoPR from "../assets/premiere-pro.png";
-import logoCSS from "../assets/css.png"
-import logoHTML from "../assets/html.png"
-import logoJS from "../assets/js.png"
-import logoNode from "../assets/node-js.png"
-import logoReact from "../assets/react.png"
-import logoJQuery from "../assets/jquery.png"
-import logoFastLearn from "../assets/fast-learn.png"
-import logoMulti from "../assets/multi-tasking.png"
-import logoProblem from "../assets/problem.png"
-import logoResponsibility from "../assets/responsibility.png"
-import logoWorkPressure from "../assets/work-under-pressure.png"
-import logoMatlab from "../assets/matlab.png"
+import logoPS from "../assets/logo-skill/photoshop.png";
+import logoAI from "../assets/logo-skill/illustrator.png";
+import logoPR from "../assets/logo-skill/premiere-pro.png";
+import logoCSS from "../assets/logo-skill/css.png"
+import logoHTML from "../assets/logo-skill/html.png"
+import logoJS from "../assets/logo-skill/js.png"
+import logoNode from "../assets/logo-skill/node-js.png"
+import logoReact from "../assets/logo-skill/react.png"
+import logoJQuery from "../assets/logo-skill/jquery.png"
+import logoFastLearn from "../assets/logo-skill/fast-learn.png"
+import logoMulti from "../assets/logo-skill/multi-tasking.png"
+import logoProblem from "../assets/logo-skill/problem.png"
+import logoResponsibility from "../assets/logo-skill/responsibility.png"
+import logoWorkPressure from "../assets/logo-skill/work-under-pressure.png"
+import logoMatlab from "../assets/logo-skill/matlab.png"
+import logoTailwindcss from "../assets/logo-skill/tailwindcss.png"
+import logoBootstrap from "../assets/logo-skill/bootstrap.png"
+
 
 export const skillDataGraphic = [
   {
@@ -64,11 +67,21 @@ export const skillDataProgramming = [
       rating: "Beginner",
     },
     {
-        name: "JQuery",
-        image: logoJQuery,
-        rating: "Beginner",
-      },
-  ];
+      name: "JQuery",
+      image: logoJQuery,
+      rating: "Beginner",
+    },
+    {
+      name: "Tailwindcss",
+      image: logoTailwindcss,
+      rating: "Beginner",
+    },
+    {
+      name: "Bootstrap",
+      image: logoBootstrap,
+      rating: "Beginner",
+    },
+  ]
 
 export const skillDataSoft = [
     {
@@ -92,4 +105,3 @@ export const skillDataSoft = [
       image: logoWorkPressure,
     },
   ];
-  

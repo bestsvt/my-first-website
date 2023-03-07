@@ -1,3 +1,5 @@
+import { interestData } from "../raw-data/interest-data";
+
 function AboutMePage () {
     
     return (
@@ -19,9 +21,15 @@ function AboutMePage () {
             <h1 className="text-about-me">About Me</h1>
             <div className="container-aboutme">
                 <div className="leftContent">
-                    <p>Successfull</p>
-                    <p>Successfull Project</p>
-                    <p>Successfull Project</p>
+                    <h2>Interested</h2>
+                    {interestData.map((item,index)=> {
+                        return (
+                    <div className="interesting-item" key={index}>
+                        <img src={item.image} alt={`${item.name}-image`} />
+                        <p>{item.name}</p>
+                    </div>
+                        )
+                    })}
                 </div>
                 <hr />
                 <div className="rightContent">

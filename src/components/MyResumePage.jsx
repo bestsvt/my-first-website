@@ -17,7 +17,7 @@ function MyResumePage() {
         <div className="leftContent">
             {hobbiesData.map((item,index)=>{
                 return (
-                    <div className="hobbies">
+                    <div className="hobbies" key={index}>
                         <p>{item.name}</p>
                         <img src={item.image} alt="" />
                     </div>
@@ -31,64 +31,69 @@ function MyResumePage() {
           </p>
           <div className="skills-header-container">
             <h2 className="text-h2">SKILLS</h2>
-            <div className="skills-container graphic">
-              <h2>Graphic</h2>
-              {skillDataGraphic.map((item, index) => {
-                return (
-                  <>
-                    <div className="skills" key={index}>
-                      <div className="skills-title">
-                        <img src={item.image} alt={`${item.name}-logo`} />
-                        <h2>{item.name}</h2>
+            <div className="skills-container-header">
+              <div className="graphic-softskill">
+                <div className="skills-container graphic">
+                  <h2>Graphic</h2>
+                  {skillDataGraphic.map((item, index) => {
+                    return (
+                      <div key={index}>
+                        <div className="skills">
+                          <div className="skills-title">
+                            <img src={item.image} alt={`${item.name}-logo`} />
+                            <h2>{item.name}</h2>
+                          </div>
+                          <h2>{item.rating}</h2>
+                        </div>
+                        <hr />
                       </div>
-                      <h2>{item.rating}</h2>
-                    </div>
-                    <hr />
-                  </>
-                );
-              })}
-            </div>
-            <div className="skills-container programming">
-              <h2>Programming Languages</h2>
-              {skillDataProgramming.map((item, index) => {
-                return (
-                  <>
-                    <div className="skills" key={index}>
-                      <div className="skills-title">
-                        <img src={item.image} alt={`${item.name}-logo`} />
-                        <h2>{item.name}</h2>
+                    );
+                  })}
+                </div>
+                <div className="skills-container softskill">
+                  <h2>Soft Skills</h2>
+                  {skillDataSoft.map((item, index) => {
+                    return (
+                      <div key={index}>
+                        <div className="skills">
+                          <div className="skills-title">
+                            <img src={item.image} alt={`${item.name}-logo`} />
+                            <h2>{item.name}</h2>
+                          </div>
+                        </div>
+                        <hr />
                       </div>
-                      <h4>{item.rating}</h4>
-                    </div>
-                    <hr />
-                  </>
-                );
-              })}
-            </div>
-            <div className="skills-container programming">
-              <h2>Soft Skills</h2>
-              {skillDataSoft.map((item, index) => {
-                return (
-                  <>
-                    <div className="skills" key={index}>
-                      <div className="skills-title">
-                        <img src={item.image} alt={`${item.name}-logo`} />
-                        <h2>{item.name}</h2>
+                    );
+                  })}
+                </div>
+              </div>
+              <div className="skills-container programming">
+                  <h2>Programming Languages</h2>
+                  {skillDataProgramming.map((item, index) => {
+                    return (
+                      <div key={index}>
+                        <div className="skills">
+                          <div className="skills-title">
+                            <img src={item.image} alt={`${item.name}-logo`} />
+                            <h2>{item.name}</h2>
+                          </div>
+                          <h4>{item.rating}</h4>
+                        </div>
+                        <hr />
                       </div>
-                    </div>
-                    <hr />
-                  </>
-                );
-              })}
+                    );
+                  })}
+              </div> 
             </div>
+
           </div>
           <div className="education-experience-container">
             <div className="education-header-container">
               <h2 className="text-h2">EDUCATION</h2>
               {educationData.map((item, index) => {
                 return (
-                  <>
-                    <div className="education-item" key={index}>
+                  <div key={index}>
+                    <div className="education-item">
                       <p>{item.date}</p>
                       <h4>{item.degree}</h4>
                       {item.department !== null ? (
@@ -97,7 +102,7 @@ function MyResumePage() {
                       <p>{item.name}</p>
                     </div>
                     <hr />
-                  </>
+                  </div>
                 );
               })}
             </div>
@@ -105,7 +110,7 @@ function MyResumePage() {
               <h2 className="text-h2">EXPERIENCE</h2>
               {experienceData.map((item, index) => {
                 return (
-                  <>
+                  <div key={index}>
                     <div className="experience-item">
                       <p>{item.date}</p>
                       <h4>{item.name}</h4>
@@ -118,12 +123,12 @@ function MyResumePage() {
                       </div>
                     </div>
                     <hr />
-                  </>
+                  </div>
                 );
               })}
             </div>
           </div>
-          <a href="">
+          <a href="https://drive.google.com/file/d/1MRXSJSDzV7XUqOpzMn-HO-58yn89E381/view?usp=share_link" target="_blank">
             <button>Download Resume</button>
           </a>
         </div>

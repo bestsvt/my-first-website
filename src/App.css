@@ -39,24 +39,31 @@ h1 {
 }
 
 .container-profile {
-    padding: 3.5em;
-}
-
-.container-profile {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     gap: 50px;
+    padding: 10% 15%;
 }
 
-.container-profile img {
-    width: 300px;
+.container-profileImage {
+    position: relative;
+    height: 20%;
+}
+
+.profileImage {
+    width: 30em;
+    position: absolute;
+    left: 38%;
+    bottom: 0;
+    z-index: 2;
 }
 
 .container-profile-rightContent {
     display: flex;
     gap: 20px;
     width: 25%;
+    margin-top: 10%;
 }
 .container-profile-rightContent hr {
     width: 1px;
@@ -85,7 +92,7 @@ h1 {
 .container-aboutMePage {
     display: flex;
     flex-direction: column;
-    padding: 5em;
+    padding: 5em 5em 5em 5em;
     gap: 2em;
 }
 
@@ -140,9 +147,23 @@ h1 {
 .container-aboutme .leftContent {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
     gap: 2em;
+}
+
+.interesting-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.interesting-item img {
+    width: 2.5em;
+}
+
+.interesting-item p {
+    font-size: 1em;
 }
 
 .container-aboutme .rightContent {
@@ -150,7 +171,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    padding: 3em 0 0 0;
+    padding: 3em 0 1em 0;
 }
 
 .container-aboutme .signature {
@@ -197,14 +218,29 @@ h1 {
 }
 
 .text-resume-aboutme {
-    width: 80%;
+    width: 95%;
 }
 
 .skills-header-container {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    width: 60%;
+}
+
+.programming, .graphic-softskill {
+    width: 45%;
+}
+
+.graphic-softskill {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.skills-container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .skills-container {
@@ -224,6 +260,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0.5em;
 }
 
 .skills h2 {
