@@ -494,7 +494,7 @@ h1 {
 .container-navbar a {
     background: none;
     width: 10%;
-    padding: 1em;
+    padding: 0.75em;
     border: solid 0.15em #ffffff;
     border-radius: 1em;
     text-decoration: none;
