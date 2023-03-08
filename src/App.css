@@ -31,6 +31,7 @@ h1 {
     font-size: 5em;    
     line-height: 1em;
     font-weight: 100;
+    text-shadow: rgba(255, 255, 255,0.5) 1px 0 10px;
 }
 
 .container-profile-leftContent p {
@@ -258,6 +259,44 @@ h1 {
     border: none;
 }
 
+.btn-skills-1 {
+    width: 95%;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+}
+
+.btn-skills-2 {
+    width: 5%;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    text-align: right;
+    cursor: pointer;
+}
+
+.btn-topic-1 {
+    width: 95%;
+    background: none;
+    border: none;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+}
+
+.btn-topic-2 {
+    width: 5%;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    text-align: right;
+    cursor: pointer;
+}
+
 .skills {
     display: flex;
     align-items: center;
@@ -340,7 +379,7 @@ h1 {
     height: 4em;
 }
 
-.container-myResumePage .rightContent button {
+.btn-download-resume {
     width: 30%;
     background: #ff8059;
     border: none;
@@ -352,7 +391,7 @@ h1 {
     cursor: pointer;
 }
 
-.container-myResumePage .rightContent button:hover {
+.btn-download-resume:hover {
     background: #ffcebf;
     color: #000000;
 }
