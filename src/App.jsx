@@ -10,7 +10,7 @@ function App() {
       <FirstPage/>
       <AboutMePage/>
       <MyResumePage/>
-      {/* <ContactMe/> */}
+      <ContactMe/>
     </div>
   )
 }

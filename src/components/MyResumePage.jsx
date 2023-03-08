@@ -7,8 +7,6 @@ import { educationData } from "../raw-data/education-data";
 import { experienceData } from "../raw-data/experience-data";
 import { hobbiesData } from "../raw-data/hobbies-data";
 
-import logoGame from "../assets/hobbies/playinggame.png"
-
 function MyResumePage() {
   return (
     <div className="container-myResumePage">
@@ -24,7 +22,7 @@ function MyResumePage() {
                 )
             })}
         </div>
-        <hr />
+        <hr className="hr-middle"/>
         <div className="rightContent">
           <p className="text-resume-aboutme">
           Although I have experience in graphic design, I am interested in transitioning to the tech industry. Currently, I am pursuing a Full-Stack Software Developer Bootcamp to gain skills in programming and eventually evolve into a UI/UX design role. I am excited to continue learning and growing professionally in this dynamic field.

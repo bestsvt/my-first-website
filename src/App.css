@@ -52,7 +52,7 @@ h1 {
 }
 
 .profileImage {
-    width: 30em;
+    width: 26%;
     position: absolute;
     left: 38%;
     bottom: 0;
@@ -68,7 +68,7 @@ h1 {
 .container-profile-rightContent hr {
     width: 1px;
     border: none;
-    background-color: var(--primary-text-color);
+    background-color: rgba(126, 126, 126, 0.7);
 }
 
 .profile-icon {
@@ -127,7 +127,7 @@ h1 {
     align-items: center;
 }
 
-.text-about-me {
+.text-about-me ,.text-myResume, .text-contact-me {
     font-size: 5em;
     margin-left: 20%;
 }
@@ -141,7 +141,7 @@ h1 {
 .container-aboutme hr {
     width: 1px;
     border: none;
-    background-color: var(--primary-text-color);
+    background-color: rgba(126, 126, 126, 0.7);
 }
 
 .container-aboutme .leftContent {
@@ -188,16 +188,16 @@ h1 {
     gap: 5em;
 }
 
-.text-myResume {
-    font-size: 5em;
-    margin-left: 20%;
-}
-
-
 .container-myResume {
     display: flex;
     justify-content: center;
     gap: 2em;
+}
+
+.hr-middle {
+    width: 1px;
+    background-color: rgba(126, 126, 126, 0.7);
+    border: none;
 }
 
 .container-myResume .leftContent {
@@ -250,9 +250,9 @@ h1 {
     margin-top: 0.5em;
 }
 
-.skills-container hr {
+.skills-container hr, .education-experience-container hr {
     height: 1px;
-    background-color: var(--primary-text-color);
+    background-color: rgba(126, 126, 126, 0.7);
     border: none;
 }
 
@@ -313,7 +313,7 @@ h1 {
     margin-top: 3em;
 }
 
-.education-item {
+.education-item, .experience-item {
     display: flex;
     flex-direction: column;
     gap: 0.25em;
@@ -324,12 +324,6 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 1.25em;
-}
-
-.experience-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25em;
 }
 
 .hobbies {
@@ -357,4 +351,97 @@ h1 {
 .container-myResumePage .rightContent button:hover {
     background: #ffcebf;
     color: #000000;
+}
+
+/* Contact Me Page */
+
+.container-contactMePage {
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.container-contact-me {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.container-contact-me hr {
+    width: 1px;
+    border: none;
+    background-color: rgba(126, 126, 126, 0.7);
+}
+
+.container-contact-me .leftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2em;
+}
+
+.container-contact-me .rightContent {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 3em 0 1em 0;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1em;
+}
+
+.my-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.contact-item img {
+    width: 2em;
+}
+
+.container-contactMePage button {
+    width: 35%;
+    background: #ff8059;
+    border: none;
+    border-radius: 1em;
+    padding: 1em 0.5em;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 2em;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 1.5em;
+}
+
+.container-form input, .container-form textarea{
+    width: 40%;
+    background: none;
+    border: solid 1px #ffffff;
+    border-radius: 0.3em;
+    color: #ffffff;
+    padding: 0.75em;
+}
+
+.container-form label {
+    font-weight: 500;
 }
