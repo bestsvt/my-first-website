@@ -4,7 +4,7 @@ import iconMail from "../assets/mail.png"
 import iconAddress from "../assets/address.png"
 
 
-function ContactMe() {
+function ContactMePage () {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -19,13 +19,13 @@ function ContactMe() {
   };
 
   return (
-    <div className="container-contactMePage">
+    <div className="container-contactMePage" id="contact-me">
       <h1 className="text-contact-me">Contact Me</h1>
       <div className="container-contact-me">
         <div className="leftContent">
           <div className="contact-item">
             <img src={iconPhone} alt="icon-telephone" />
-            <p>+66 84657 6439</p>
+            <p>+668 4657 6439</p>
           </div>
           <div className="contact-item">
             <img src={iconMail} alt="icon-email" />
@@ -34,8 +34,8 @@ function ContactMe() {
           <div className="contact-item">
             <img src={iconAddress} alt="icon-address" />
             <div className="my-address">
-                <p>7/45 Soi 19, Ratchadapisek Rd.</p>
-                <p>Bangkok Yai, Wat Tha Phra</p>
+                <p>62 Soi 19, Ratchadapisek Rd.</p>
+                <p>Bangkok Yai</p>
                 <p>Bangkok, 10600</p>
             </div>
           </div>
@@ -98,4 +98,4 @@ function ContactMe() {
   );
 }
 
-export default ContactMe;
+export default ContactMePage;

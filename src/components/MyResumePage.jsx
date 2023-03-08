@@ -9,7 +9,7 @@ import { hobbiesData } from "../raw-data/hobbies-data";
 
 function MyResumePage() {
   return (
-    <div className="container-myResumePage">
+    <div className="container-myResumePage" id="resume">
       <h1 className="text-myResume">My Resume</h1>
       <div className="container-myResume">
         <div className="leftContent">

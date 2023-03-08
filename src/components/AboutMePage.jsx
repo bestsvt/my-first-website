@@ -3,7 +3,7 @@ import { interestData } from "../raw-data/interest-data";
 function AboutMePage () {
     
     return (
-        <div className="container-aboutMePage">
+        <div className="container-aboutMePage" id="about-me">
             <div className="contanier-aboutme-top">
                 <div>
                     <p>Born in</p>

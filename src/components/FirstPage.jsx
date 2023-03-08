@@ -19,9 +19,9 @@ function FirstPage () {
                     <div className="profile-aboutMe">
                         <p>I'm a junior software developer based in Bangkok and I particularly enjoy solving problems with code. I also love playing games, watching series & listening to music.</p>
                         <div className="profile-icon">
-                            <a href="https://www.facebook.com" target="_blank"><img src={iconFB} alt="facebook-icon" /></a>
-                            <a href="https://www.linkedin.com" target="_blank"><img src={iconIN} alt="linkedin-icon" /></a>
-                            <a href="https://github.com" target="_blank"><img src={iconGithub} alt="github-icon" /></a>
+                            <a href="https://www.facebook.com/Sorachak.Best" target="_blank"><img src={iconFB} alt="facebook-icon" /></a>
+                            <a href="https://www.linkedin.com/in/sorachak-vatjanajaroenrat-822b54240/" target="_blank"><img src={iconIN} alt="linkedin-icon" /></a>
+                            <a href="https://github.com/bestsvt" target="_blank"><img src={iconGithub} alt="github-icon" /></a>
                         </div>
                     </div>
                 </div>
