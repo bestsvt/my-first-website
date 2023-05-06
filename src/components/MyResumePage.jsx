@@ -293,7 +293,7 @@ function MyResumePage() {
             </div>
           </div>
           <a
-            href="https://drive.google.com/file/d/1MRXSJSDzV7XUqOpzMn-HO-58yn89E381/view?usp=share_link"
+            href="https://drive.google.com/file/d/1AcyrX92wUuW1W5xIHphSx-Wm3SpFj8Cg/view?usp=share_link"
             target="_blank"
           >
             <button className="btn-download-resume">Download Resume</button>
